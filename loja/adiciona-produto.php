@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html>
-
-<?php 
-$nome = $_GET["nome"];
-$preco = $_GET["preco"];
+<?php include("header.php"); ?>
+	<?php 
+	$nome = $_GET["nome"];
+	$preco = $_GET["preco"];
 
 
-?>
+	?>
 
-Produto <?php echo $nome; ?>: adicionado com sucesso!
-
-
-</html>
+	<p class="alert-success">Produto <?php echo $nome; ?>, <?php echo $preco ?> reais adicionado com sucesso!</p>
+<?php include("footer.php"); ?>

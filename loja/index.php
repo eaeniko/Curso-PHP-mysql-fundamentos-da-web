@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title></title>
-	</head>
-	<body>
-		<h1>Bem vindo!</h1>
-	</body>
-</html>
+<?php include("header.php"); ?>
+				
+	<h1>Bem vindo!</h1>
+
+<?php include("footer.php"); ?>

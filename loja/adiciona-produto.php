@@ -1,5 +1,5 @@
 <?php include("header.php"); 
-include("conecta.php")
+include("conecta.php");
 include("banco-produto.php"); ?>
 	<?php 
 

@@ -20,10 +20,13 @@ include("banco-produto.php"); ?>
 			<td><?= $produto['preco']?></td>
 			<td><?= substr($produto['descricao'], 0, 40)?></td>
 			<td><?= $produto['categoria_nome'] ?></td>
+			<td>	
+				<a class="btn btn-success"href="produto-altera-formulario.php?id=<?=$produto['id']?>">alterar</a>
+			</td>
 			<td>
 				<form action="remove-produto.php" method="post">
 					<input type="hidden" name="id" value="<?=$produto['id']?>">
-					<button class="btn btn-danger">Remover</a>
+					<button class="btn btn-danger">remover</a>
 
 				</form>
 			</td>

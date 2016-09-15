@@ -22,16 +22,23 @@ include("banco-categoria.php");
 				<td><textarea class="form-control" name="descricao"></textarea><br></td>
 			</tr>
 			<tr>
+				<td></td>
+				<td><input type="checkbox" name="usado" value="true"> Usado</td>
+			</tr>
+			<tr>
 				<td>Categorias</td>
 				<td> 
-					<?php foreach ($categorias as $categoria) : ?>
-						<input type="radio" name="categoria_id" value="<?=$categoria['id']?>"><?=$categoria['nome']?><br>
-					<?php  endforeach ?>
+					<select name="categoria_id" class="form-control">
+						<?php foreach ($categorias as $categoria) : ?>
+							<option value="<?=$categoria['id']?>"><?=$categoria['nome']?>
+							</option>
+						<?php  endforeach ?>
+					</select>
 				</td>
 			</tr>
 			<tr>
 				<td>
-				<input class="btn btn-primary" type="submit" name="cadastrar">
+				<button class="btn btn-primary" type="submit">Cadastrar</button>
 				</td>
 			</tr>
 		</table>
